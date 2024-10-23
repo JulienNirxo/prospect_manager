@@ -1,0 +1,97 @@
+# Fichiers spécifiques à Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+*.tmp
+*.pid
+*.gz
+logs/
+
+# Fichiers de configuration système
+.DS_Store
+Thumbs.db
+
+# Fichiers spécifiques à Gradle
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+gradle-app.setting
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# Eclipse, STS (Spring Tool Suite)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# Fichiers de configuration spécifiques à PostgreSQL
+*.pgsql
+*.sql
+
+# Propriétés locales de l'application
+application-local.properties
+application-dev.properties
+application-prod.properties
+
+# Cache local et fichiers temporaires
+*.swp
+*~
+
+# Fichiers de sauvegarde
+*.bak
+*.old
+*.orig
+
+# Fichiers de configuration Docker
+docker-compose.override.yml
+
+# Fichiers JetBrains
+*.idea/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/dictionaries
+.idea/libraries
+.idea/vcs.xml
+
+# Autres fichiers à ignorer
+.env
+*.env.local
