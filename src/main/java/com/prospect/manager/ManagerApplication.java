@@ -17,8 +17,6 @@ public class ManagerApplication {
     @Bean
     public CommandLineRunner demo(UserRepository userRepository) {
         return (args) -> {
-            userRepository.save(new User("John", "Doe", "john.doe@example.com"));
-            userRepository.save(new User("Jane", "Smith", "jane.smith@example.com"));
         };
     }
 }

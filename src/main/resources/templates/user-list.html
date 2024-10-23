@@ -5,6 +5,7 @@
 </head>
 <body>
     <h1>Liste des utilisateurs</h1>
+    <a href="/users/add">Add New User</a>
     <table>
         <thead>
             <tr>
@@ -20,6 +21,10 @@
                 <td th:text="${user.firstName}"></td>
                 <td th:text="${user.lastName}"></td>
                 <td th:text="${user.email}"></td>
+                <td>
+                    <a th:href="@{/users/edit/{id}(id=${user.id})}">Edit</a>
+                    <a th:href="@{/users/delete/{id}(id=${user.id})}">Delete</a>
+                </td>
             </tr>
         </tbody>
     </table>
